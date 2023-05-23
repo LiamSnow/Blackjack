@@ -10,7 +10,7 @@ class BlackJack
         while (programRunning)
         {
             //intro
-            Console.WriteLine("\t<<< BLACKJACK >>>\n");
+            Console.WriteLine("<<< BLACKJACK >>>\n");
 
             //create deck
             Deck deck = new Deck();
@@ -63,7 +63,7 @@ class BlackJack
                 Console.Write(dealerHand.ToString());
             }
 
-            //Check Who Won
+            //Log Solution
             Console.WriteLine("");
             if (playerHand.hasBusted)
             {
@@ -99,7 +99,7 @@ class BlackJack
                 }
                 else if (Char.ToLower(playAgainResponse) == 'y')
                 {
-                    Console.Write("\n\n");
+                    Console.Clear();
                     break;
                 }
             }
