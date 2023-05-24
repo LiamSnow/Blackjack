@@ -89,24 +89,4 @@ class Hand
     {
         get { return allValues.Contains(21); }
     }
-
-    public override string ToString()
-    {
-        return ToString(false);
-    }
-
-    public string ToString(bool isDealer)
-    {
-        StringBuilder sb = new StringBuilder();
-        bool redactFirst = isDealer;
-        foreach (Card card in cards)
-        {
-            //TODO dealer code
-            sb.Append(" - ");
-            sb.Append(redactFirst ? "REDACTED" : card.ToString());
-            sb.Append("\n");
-            redactFirst = false;
-        }
-        return sb.ToString();
-    }
 }
