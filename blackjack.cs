@@ -189,7 +189,7 @@ class BlackJack
         {
             display.WriteTopCentered("=BUST", 30, 3 + c);
         }
-        else
+        else if (!redact)
         {
             display.WriteTopCentered("=" + string.Join(", ", dealerHand.allValidValues), 30, 4 + c);
         }
