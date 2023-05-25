@@ -187,7 +187,7 @@ class BlackJack
         }
         if (dealerHand.hasBusted)
         {
-            display.WriteTopCentered("=BUST", 30, 3 + c);
+            display.WriteTopCentered("=BUST", 30, 4 + c);
         }
         else if (!redact)
         {
